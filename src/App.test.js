@@ -13,3 +13,8 @@ test('abc', () => {
   const linkElement = getByText(/hello piaic/i);
   expect(linkElement).toBeInTheDocument();
 });
+test('def', () => {
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/HELLO AGAIN/i);
+  expect(linkElement).toBeInTheDocument();
+});
